@@ -10,3 +10,11 @@ struct xt_tls_info {
 };
 
 #endif /* _XT_TLS_TARGET_H */
+
+typedef enum {
+	NAME_FOUND,
+	NAME_NOT_FOUND,
+	NO_HANDSHAKE,
+	NOT_ENOUGH_DATA,
+	PROTOCOL_ERROR
+} Result;
